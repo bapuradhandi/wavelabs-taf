@@ -76,6 +76,12 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin}</version>
                 <configuration>
+  				<properties>
+    				<property>
+      				<name>listener</name>
+      				<value>com.epam.reportportal.testng.ReportPortalTestNGListener</value>
+   					</property>
+  				</properties>
                     <encoding>${utf-8}</encoding>
                     <source>${java-version}</source>
                     <target>${java-version}</target>
@@ -259,12 +265,11 @@
             <version>${phantomjs.version}</version>
         </dependency>
 
-        <dependency>
-
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>${testng}</version>
-        </dependency>
+		<dependency>
+    		<groupId>org.testng</groupId>
+    		<artifactId>testng</artifactId>
+    		<version>6.11</version>
+		</dependency>
         <!--Selenium Webdriver -->
 
 
@@ -421,6 +426,18 @@
             <artifactId>json-path</artifactId>
             <version>2.4.0</version>
         </dependency>
+        
+        <dependency>
+    		<groupId>org.apache.logging.log4j</groupId>
+    		<artifactId>log4j-api</artifactId>
+   			<version>2.10.0</version>
+		</dependency>
+
+		<dependency>
+     		<groupId>org.apache.logging.log4j</groupId>
+     		<artifactId>log4j-core</artifactId>
+     		<version>2.10.0</version>
+		</dependency>
 
     </dependencies>
     <repositories>
