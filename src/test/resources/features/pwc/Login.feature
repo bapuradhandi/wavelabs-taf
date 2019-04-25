@@ -6,7 +6,9 @@ Feature: Login:- A user should be logged in only if he/she provides correct cred
     When user enters user name "<username>"
     And user enters password "<password>"
     When user clicks on sign in button
+    Given user launches api portal
 
     Examples:
       | username         | password    |
       | bapu@wavelabs.in | welcome@123 |
+      

@@ -28,15 +28,19 @@ public class UrlBuilder {
     public static void startAtHomePage() {
         WebDriverHelper.getWebDriver().navigate().to((basePath));
     }
+    
+    public static void startApiHomePage() {
+        WebDriverHelper.getWebDriver().navigate().to(("https://jsonplaceholder.typicode.com/users"));
+    }
 
 
     public static URL getApiUrlForEndPoint(String endpoint) {
         return createApiUrl(endpoint);
     }
 
-    public static URI getBasePathURI() {
-        return URI.create(Props.getProp("api.url"));
-    }
+//    public static URI getBasePathURI() {
+//        return URI.create(Props.getProp("api.url"));
+//    }
 
 
     public static String getUrl(String applicationUrl) {

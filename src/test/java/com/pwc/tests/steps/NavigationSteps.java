@@ -7,13 +7,15 @@ import cucumber.api.java.en.Given;
 public class NavigationSteps {
 
     @Given("^user launches pwc portal$")
-    public void userLaunchesHireAlchemyPortal() throws Throwable {
+    public void userLaunchesPwcPortal() throws Throwable {
         UrlBuilder.startAtHomePage();
     }
 
 
-    @Given("^user launches portal$")
-    public void userLaunchesPortal() throws Throwable {
-        UrlBuilder.startAtHomePage();
+    @Given("^user launches api portal$")
+    public void userLaunchesApiPortal() throws Throwable {
+        UrlBuilder.startApiHomePage();
     }
+    
+
 }
