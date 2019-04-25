@@ -25,9 +25,9 @@ import static com.jayway.restassured.RestAssured.given;
 public class ApiHelper {
     private static Gson gson;
 
-    static {
-        RestAssured.baseURI = UrlBuilder.getBasePathURI().toString();
-    }
+//    static {
+//        RestAssured.baseURI = UrlBuilder.getBasePathURI().toString();
+//    }
 
 
     protected static RequestSpecification givenConfig() {
