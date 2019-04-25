@@ -4,4 +4,5 @@ Feature: Login:- A user should be logged in only if he/she provides correct cred
   Scenario Outline: Check if a user with correct credentials is able to log in
 
     Given user launches api portal
+    when user retrieves a specific api information
       
