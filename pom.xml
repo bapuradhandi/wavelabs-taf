@@ -165,6 +165,14 @@
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
             </resource>
+            
+			<resource>
+				<directory>Source code</directory>
+				<includes>
+				<include>*.xml</include>
+				<include>*.properties</include>
+				</includes>
+				</resource>
         </resources>
 
 
